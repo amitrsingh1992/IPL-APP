@@ -1,0 +1,140 @@
+/********* pager style **********/
+
+#video-grid-view ul.yiiPager {
+    font-size: 12px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    display: inline;
+    float: right;
+    padding-left: 10px;
+}
+
+#video-grid-view ul.yiiPager li {
+    -moz-transition: all 0.218s ease 0s;
+    background-color: whiteSmoke;
+    background-image: -moz-linear-gradient(center top, whiteSmoke, #F0F0F0);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.95) inset;
+    display: inline-block;
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    min-width: 32px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+#video-grid-view ul.yiiPager li a span {
+    background-image: url("icons/arrows.png");
+    display: block;
+    height: 13px;
+    margin: 7px auto 0;
+    opacity: 0.6;
+    text-indent: -99999px;
+    width: 9px;
+}
+
+#video-grid-view ul.yiiPager li.next a {
+    border-radius: 0 2px 2px 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#video-grid-view ul.yiiPager li.next a span {
+    background-position: -69px -81px;
+    width: 10px;
+}
+
+#video-grid-view ul.yiiPager li.previous {
+    margin-right: -1px;
+}
+
+#video-grid-view ul.yiiPager li.previous a {
+    border-radius: 2px 0 0 2px;
+}
+
+#video-grid-view ul.yiiPager li.previous a span {
+    background-position: -57px -81px;
+}
+
+#video-grid-view ul.yiiPager li:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+#video-grid-view ul.yiiPager li:hover a span {
+    opacity: 1;
+}
+
+#video-grid-view ul.yiiPager a:link,
+#video-grid-view ul.yiiPager a:visited {
+    border: none;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 0px;
+}
+
+#video-grid-view ul.yiiPager a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+#video-grid-view ul.yiiPager .selected a {
+    background: #8d8d8d;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+}
+
+#video-grid-view ul.yiiPager .hidden a {
+    border: none;
+    color: #888888;
+}
+
+#video-grid-view ul.yiiPager a {
+    font-weight: normal;
+}
+
+#video-grid-view .yiiPager .first,
+#video-grid-view .yiiPager .last {
+    display: none;
+}
+
+#video-grid-view.list-view .summary,
+#video-grid-view .summary {
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #676767;
+}
+
+#video-grid-view.list-view-loading {
+    background-position: 81% 7px;
+}
+
+#video-grid-view.list-view .noResultsMsg {
+    padding-top: 10px;
+    height: 27px;
+}
+
+#video-grid-view.list-view .pager {
+    margin: 3px 0px;
+    text-align: right;
+    padding-bottom: 3px;
+    overflow: auto;
+}
+
+#video-grid-view.list-view .items {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/******* end of pager style ***/

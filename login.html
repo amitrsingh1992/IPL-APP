@@ -1,0 +1,62 @@
+ <html>
+<head>
+  <title>Login Page</title>
+  <style>
+  body{
+    padding : 20px;
+    background: url(loginform.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .email,.password,.submit
+{
+  font-size: 25px;
+  -moz-border-radius:4px; /* Firefox */
+  -webkit-border-radius: 4px; /* Safari, Chrome */
+  -khtml-border-radius: 4px; /* KHTML */
+  border-radius: 4px; /* CSS3 */
+  background: lightblue;
+}
+h1{
+  color:lightblue;
+}
+
+  tr.ed > td,.pw > td{
+    padding-bottom: 1em;
+  }
+  .table{
+    border: 1px solid black;
+    background-color: lightblue;
+    opacity: 0.8;
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <center>
+  <header>
+    <h1><u>Login Page</u></h1>
+  </header>
+  <div class="container">
+  <form method="POSt">
+    <table class="table">
+      <tr class="ed">
+        <td>E-mail Id:</td><td><input type="email" class="email" name="email"></td>
+      </tr>
+      <tr class="pw">
+        <td>Password :</td><td><input type="password" class="password" name="password"></td>
+      </tr>
+      <tr>
+        <td> <input type="submit" name="submit" class="submit" value="Submit" align="bottom" onclick="allnumeric(document.form1.phonenumber)"/></td>
+      </tr>
+
+    </table>
+  </form>
+</div>
+</center>
+</body>
+</html>

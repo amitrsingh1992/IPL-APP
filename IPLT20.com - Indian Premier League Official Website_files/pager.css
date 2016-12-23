@@ -1,0 +1,251 @@
+/********* pager style **********/
+
+.newsList650 ul.yiiPager
+{ 
+    font-size:12px; 
+    border:0; 
+    margin:0; 
+    padding:0; 
+    line-height:100%; 
+    display:inline; 
+    float: right;
+    padding-left: 10px; 
+}
+
+.videos ul.yiiPager, .galleries ul.yiiPager
+{ 
+    font-size:12px; 
+    border:0; 
+    margin:0; 
+    padding:0; 
+    line-height:100%; 
+    display:inline; 
+    float: right;
+    padding-left: 10px; 
+}
+
+#mediaList ul.yiiPager
+{ 
+    /*padding-right: 15px;*/
+}
+
+.newsList650 ul.yiiPager li, .videos ul.yiiPager li, .galleries ul.yiiPager li
+{
+    -moz-transition: all 0.218s ease 0s;
+    background-color: whiteSmoke;
+    background-image: -moz-linear-gradient(center top , whiteSmoke, #F0F0F0);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.95) inset;
+    display: inline-block;
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    min-width: 32px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.newsList650 ul.yiiPager li a span, .videos ul.yiiPager li a span, .galleries ul.yiiPager li a span
+{
+    /*background-image: url("../../css/icons/arrows.png");*/
+    background-image: url("icons/arrows.png");
+    display: block;
+    height: 13px;
+    margin: 7px auto 0;
+    opacity: 0.6;
+    text-indent: -99999px;
+    width: 9px;
+}
+
+.newsList650 ul.yiiPager li.next a, .videos ul.yiiPager li.next a, .galleries ul.yiiPager li.next a
+{
+    border-radius: 0 2px 2px 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.newsList650 ul.yiiPager li.next a span, .videos ul.yiiPager li.next a span, .galleries ul.yiiPager li.next a span
+{
+    background-position: -69px -81px;
+    width: 10px;
+}
+
+.newsList650 ul.yiiPager li.previous, .videos ul.yiiPager li.previous, .galleries ul.yiiPager li.previous
+{
+    margin-right: -1px;
+}
+
+.newsList650 ul.yiiPager li.previous a, .videos ul.yiiPager li.previous a, .galleries ul.yiiPager li.previous a
+{
+    border-radius: 2px 0 0 2px;
+}
+
+.newsList650 ul.yiiPager li.previous a span, .videos ul.yiiPager li.previous a span, .galleries ul.yiiPager li.previous a span
+{
+    background-position: -57px -81px;
+}
+
+.newsList650 ul.yiiPager li:hover, .videos ul.yiiPager li:hover, .galleries ul.yiiPager li:hover
+{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.newsList650 ul.yiiPager li:hover a span, .videos ul.yiiPager li:hover a span, .galleries ul.yiiPager li:hover a span
+{
+    opacity: 1;
+}
+
+.newsList650 ul.yiiPager a:link, .newsList650 ul.yiiPager a:visited, .videos ul.yiiPager a:link, .videos ul.yiiPager a:visited, .galleries ul.yiiPager a:link, .galleries ul.yiiPager a:visited 
+{
+    border: none;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.newsList650 ul.yiiPager a:hover, .videos ul.yiiPager a:hover, .galleries ul.yiiPager a:hover
+{
+    border: none;
+    text-decoration: none;
+}
+.newsList650 ul.yiiPager .selected a, .videos ul.yiiPager .selected a, .galleries ul.yiiPager .selected a
+{
+    background: #8d8d8d;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+}
+.newsList650 ul.yiiPager .hidden a, .videos ul.yiiPager .hidden a, .galleries ul.yiiPager .hidden a  {border: none; color:#888888; }
+.newsList650 ul.yiiPager a, .videos ul.yiiPager a, .galleries ul.yiiPager a { font-weight:normal; }
+.newsList650 .yiiPager .first, .newsList650 .yiiPager .last, .videos .yiiPager .first, .videos .yiiPager .last, .galleries .yiiPager .first, .galleries .yiiPager .last
+{ 
+    display: none; 
+}
+
+.newsList650 .list-view .summary, .newsList650 .summary 
+{
+    font-size: 12px;
+    line-height: 27px;
+    text-align: right;
+    color: #676767;
+    margin-bottom: 10px;
+}
+
+.videos .list-view .summary, .videos .summary   
+{
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;           
+    margin-bottom: 10px;
+}
+
+.galleries .list-view .summary, .galleries .summary   
+{
+    /*margin-top: 20px;*/
+    font-size: 12px;
+    line-height: 27px;
+    text-align: right;           
+    margin-bottom: 0px;
+}
+
+.newsList650 #news-list  /* excluded from video section*/
+{  
+    margin-top: -38px;
+}
+
+.newsList650 #teams-news /* excluded from video section*/
+{  
+    margin-top: -10px;
+}
+
+.newsList650 .list-view .pager 
+{
+    margin: 0;
+    text-align: right;
+    float: right;
+    margin-left: 10px;
+}
+
+.galleries #album-list .list-view
+{  
+    margin-top: 0px;
+}
+
+.galleries #mediaList .list-view
+{  
+    margin-top: 0px;
+}
+
+.mediaBrowse .summary
+{
+    color: #676767;
+}
+
+.newsList650 .list-view-loading, .videos .list-view-loading, .galleries .list-view-loading
+{
+	background-position: 81% 5px;
+}
+
+.newsList650 #news-list .noResultsMsg
+{
+    padding-top: 43px;
+}
+
+.newsList650 #teams-news .noResultsMsg
+{
+    padding-top: 0px;
+}
+
+.videos .list-view .noResultsMsg
+{
+    padding-top: 10px;
+    height: 27px;
+}
+
+.galleries .list-view .noResultsMsg
+{
+    padding-top: 10px;
+    height: 27px;
+}
+
+.videos .list-view .pager 
+{
+    margin: -29px 0 0;
+    text-align: right;
+}
+
+.galleries .list-view .pager
+{
+  /* margin: -10px 0 0;*/
+    margin: 0px;
+    text-align: right;
+}
+
+.galleries .list-view .items 
+{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.videos .list-view .items 
+{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.newsList650 .list-view .items 
+{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+
+/******* end of pager style ***/

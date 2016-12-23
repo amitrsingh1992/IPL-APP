@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Sign Up Page</title>
+    <style>
+    .firstname,.surname,.email,.email1,.num,.num1,.submit,.pw1
+{
+    font-size: 25px;
+    -moz-border-radius:4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari, Chrome */
+    -khtml-border-radius: 4px; /* KHTML */
+    border-radius: 4px; /* CSS3 */
+    background: lightblue;
+}
+
+#header{
+  padding : 10px;
+}
+tr.fn > td,.un > td,.ed > td,.red > td,.mn > td,.pw > td{
+  padding-bottom: 1em;
+}
+h1{
+  color:lightblue;
+}
+body{
+  padding : 20px;
+  background: url(loginform.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.table{
+  border: 1px solid black;
+  background-color: lightblue;
+  opacity: 0.8;
+  padding: 25px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+    </style>
+</head>
+
+<body>
+  <center>
+  <header id="header">
+  <h1><U>Welcome To IPL SignUp Form!</U></h1></br>
+</header><hr>
+
+  <p>Please Fill the Form So that, We can help you with better Service in this <strong>VIVO IPL 2017</strong> festival</p></br>
+  <div class="containers">
+    <form name="form1" class="inputForm">
+      <table class="table" cellspacing="1" cellpadding="1">
+        <tr class="fn">
+      <td><strong>First Name :</strong></td><td><input type="text" name="firstname" class="firstname" maxlength="25" required></td>
+    </tr>
+    <tr class="un">
+      <td><strong>Surname :</strong></td><td><input type="text" name="surname" class="surname" maxlength="20" required></td>
+    </tr>
+    <tr class="ed">
+      <td><strong>E-mail Id :</strong></td><td><input type="email" name="emailid" class="email" required></td>
+    </tr>
+
+    <tr class="red">
+      <td><strong>Re-Enter Email Id :</strong></td><td><input type="email" name="emailid" class="email1" required></td>
+    </tr>
+
+    <tr class="mn">
+      <td><strong>Mobile Number :</strong></td><td><input type="text" name="phonenumber" maxlength="10" class="num" required></td>
+    </tr>
+    <tr class="pw">
+      <td><strong>Password :</strong></td><td><input type="password" name="password" minlength="8" maxlength="32" class="pw1" required></td>
+    </tr>
+
+    <tr>
+      <td> <input type="button" name="submit" class="submit" value="Submit" align="bottom" onclick="allnumeric(document.form1.phonenumber)"/></td>
+    </tr>
+
+  </table>
+    </form>
+  </div>
+  </center>
+  <script src="validator.js"></script>
+</body>
+
+</html>
