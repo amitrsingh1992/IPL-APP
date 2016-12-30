@@ -1,5 +1,5 @@
 $(function () {
-  window.location.href = '/#';
+  // window.location.href = '/#';
 
 // An event handler with calls the render function on every hashchange.
 	// The render function will show the appropriate content of out page.

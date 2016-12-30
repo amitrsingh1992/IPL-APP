@@ -37,7 +37,7 @@ function putFirstContent() {
     var carDOM = "";
   $.each(data.val().team_info,function(key,value){
 carDOM+=' <div class="card col-lg-3">\
-  <img class="card-img-top" src="ipl images/team_logo/'+value.team_img_url+'" alt="Card image cap">\
+  <a href="#team/'+value.team_name.replace(/\s/g,'')+'"><img class="card-img-top" src="ipl images/team_logo/'+value.team_img_url+'" alt="Card image cap"></a>\
   <div class="card-block">\
     <h4 class="card-title">'+value.team_name+'</h4>\
   </div></div>';
@@ -53,8 +53,11 @@ function putTeamContent(teamName) {
   ref.once("value").then(function(data){
     var carDOM = "";
   $.each(data.val(),function(key,value){
-carDOM+=' <div class="card col-lg-4">\
+carDOM+=' <div class="card col-lg-4" >\
+      <div class="card1">\
+      <div class="front">\
   <img class="card-img-top" src="ipl images/'+value.player_img_url+'" alt="Card image cap">\
+  </div><div class="back">\
     <div class="card-block">\
     <h4 class="card-title"><strong>Name:</strong>'+value.player_name+'</h4>\
     <h4 class="card-title"><strong>Role:</strong>'+value.player_role+'</h4>\
@@ -62,10 +65,11 @@ carDOM+=' <div class="card col-lg-4">\
     <h4 class="card-title"><strong>Bowling Style:</strong>'+value.player_bowling_style+'</h4>\
     <h4 class="card-title"><strong>Nationality:</strong>'+value.player_nationality+'</h4>\
     <h4 class="card-title"><strong>Date Of Birth:</strong>'+value.player_dob+'</h4>\
-  </div></div>';
+  </div></div></div></div>';
   });
-  console.log(carDOM);
   $(".mycontent").append(carDOM);
+  $(function(){
+  $(".card1").flip({trigger:'click',axis: 'x'});
   });
-
+  });
 }

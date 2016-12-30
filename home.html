@@ -7,6 +7,65 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#dd").click(function(){
+        $.ajax({url: "dd.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#gl").click(function(){
+        $.ajax({url: "gl.html", success: function(result){
+            $("#body").html(result);
+        }});
+    });
+    $("#kkr").click(function(){
+        $.ajax({url: "kkr.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#kxip").click(function(){
+        $.ajax({url: "kxip.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#mi").click(function(){
+        $.ajax({url: "mi.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#rcb").click(function(){
+        $.ajax({url: "rcb.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#rps").click(function(){
+        $.ajax({url: "first.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#srh").click(function(){
+        $.ajax({url: "first.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#cal").click(function(){
+        $.ajax({url: "first.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#signup").click(function(){
+        $.ajax({url: "first.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+    $("#login").click(function(){
+        $.ajax({url: "first.html", success: function(result){
+            $("body").html(result);
+        }});
+    });
+});
+</script>
 <style>
 #mydiv img {
     width: 100%;
@@ -103,23 +162,23 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="dd.html">Delhi Daredevils</a></li>
-            <li><a href="gl.html">Gujrat Lions</a></li>
-            <li><a href="kkr.html">Kolkata Knight Riders</a></li>
-            <li><a href="kxip.html">Kings XI Punjab</a></li>
-            <li><a href="mi.html">Mumbai Indians</a></li>
-            <li><a href="rcb.html">Royal Challengers Bangalore</a></li>
-            <li><a href="rps.html">Rising Pune Supergiants</a></li>
-            <li><a href="srh.html">Sun Risers Hyderabad</a></li>
+            <li id="dd"><a href="dd.html">Delhi Daredevils</a></li>
+            <li id="gl"><a href="gl.html">Gujrat Lions</a></li>
+            <li id="kkr"><a href="kkr.html">Kolkata Knight Riders</a></li>
+            <li id="kxip"><a href="kxip.html">Kings XI Punjab</a></li>
+            <li id="mi"><a href="mi.html">Mumbai Indians</a></li>
+            <li id="rcb"><a href="rcb.html">Royal Challengers Bangalore</a></li>
+            <li id="rps"><a href="rps.html">Rising Pune Supergiants</a></li>
+            <li id="srh"><a href="srh.html">Sun Risers Hyderabad</a></li>
           </ul>
         </li>
-        <li><a href="calendar.html">IPL 2017 Calendar</a></li>
+        <li id="cal"><a href="calendar.html">IPL 2017 Calendar</a></li>
         <li><a href="gallary.html">Gallary</a></li>
       </ul>
-      <!--<ul class="nav navbar-nav navbar-right">
-        <li><a href="ipl_signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>-->
+      <ul class="nav navbar-nav navbar-right">
+        <li id="signup"><a href="ipl_signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li id="login"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
   </div>
 </nav>
